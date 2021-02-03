@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="" />
+    <list id="abf4a345-e62a-45fe-8054-dfc36ef7d034" name="Revert &quot;1.24号初次提交&quot;" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1611487253" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Verahuan/StudyNotesForReactRelated" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nVshv5UUCZ0b4F4VqGgNlJpQQE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="" />
+      <changelist id="abf4a345-e62a-45fe-8054-dfc36ef7d034" name="Revert &quot;1.24号初次提交&quot;" comment="" />
+      <created>1611486716588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611486716588</updated>
+      <workItem from="1611486718753" duration="1128000" />
+    </task>
+    <task id="LOCAL-00001" summary="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee">
+      <created>1611486826598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611486826598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="0" key="CommitChangelistDialog2" timestamp="1611486825959">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1611486825959" />
+    <state x="488" y="268" key="VCS.ChangelistChooser" timestamp="1611486858798">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="488" y="268" key="VCS.ChangelistChooser/0.0.1280.720@0.0.1280.720" timestamp="1611486858798" />
+    <state x="233" y="90" key="Vcs.Push.Dialog.v2" timestamp="1611487054709">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1611487054709" />
+  </component>
+</project>
