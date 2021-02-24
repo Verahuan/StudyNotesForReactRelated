@@ -25,7 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="feat(redux学习+实战): 学习redux基础使用+练习+中间件+antD">
+    <list default="true" id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="feat(新特性+hooks): Context  ContextType  lazy  Suspense  memo hooks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="abf4a345-e62a-45fe-8054-dfc36ef7d034" name="Revert &quot;1.24号初次提交&quot;" comment="" />
@@ -33,9 +33,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -108,6 +105,10 @@
       <updated>1611486716588</updated>
       <workItem from="1611486718753" duration="1128000" />
       <workItem from="1612353683246" duration="1519000" />
+      <workItem from="1612774294656" duration="843000" />
+      <workItem from="1613487893355" duration="387000" />
+      <workItem from="1613571244783" duration="8000" />
+      <workItem from="1614174676695" duration="789000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee">
       <created>1611486826598</created>
@@ -123,7 +124,28 @@
       <option name="project" value="LOCAL" />
       <updated>1612353921936</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(umi搭建项目+dva+antD): 学习umi基础使用+练习+antD">
+      <created>1612774498052</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612774498052</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(新特性+hooks): Context  ContextType  lazy  Suspense  memo hooks">
+      <created>1613488251210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613488251210</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(项目练习): hooks练习和项目实战">
+      <created>1614174839714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614174839714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,20 +178,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee" />
     <MESSAGE value="feat(redux学习+实战): 学习redux基础使用+练习+中间件+antD" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(redux学习+实战): 学习redux基础使用+练习+中间件+antD" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="233" y="0" key="CommitChangelistDialog2" timestamp="1611486825959">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1611486825959" />
-    <state x="488" y="268" key="VCS.ChangelistChooser" timestamp="1611486858798">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="488" y="268" key="VCS.ChangelistChooser/0.0.1280.720@0.0.1280.720" timestamp="1611486858798" />
-    <state x="233" y="90" key="Vcs.Push.Dialog.v2" timestamp="1612353971586">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="233" y="90" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1612353971586" />
+    <MESSAGE value="feat(umi搭建项目+dva+antD): 学习umi基础使用+练习+antD" />
+    <MESSAGE value="feat(新特性+hooks): Context  ContextType  lazy  Suspense  memo hooks" />
+    <MESSAGE value="feat(项目练习): hooks练习和项目实战" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(项目练习): hooks练习和项目实战" />
   </component>
 </project>

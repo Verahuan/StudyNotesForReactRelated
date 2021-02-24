@@ -55,7 +55,7 @@
 
 - map：对所有元素进行指定操作并返回数组
     - array.map(function(currentValue,index,arr), thisValue)
-- reduce：接收一个函数作为累加器，将数组中所有元素按此累加器计算成一个值
+- **reduce：接收一个函数作为累加器，将数组中所有元素按此累加器计算成一个值**
     - array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
 - every：判断所有元素是否都符合条件，满足返回true
     - array.every(function(currentValue,index,arr), thisValue)

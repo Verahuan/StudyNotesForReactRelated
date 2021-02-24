@@ -197,3 +197,41 @@ useCallback(fn)
 ![image-20210216223820001](D:\typora\images\image-20210216223820001.png)
 
 **为什么这里可以不依赖clickCount!**
+
+## 6.useRef
+
+### 作用
+
+相当于直接给了一个途径，可以直接获取得到组件或者DOM节点
+
+变量也可以使用useRef:用来同步不同的渲染周期之间需要共享的数据
+
+```jsx
+const APP=()=>{
+    let it=useRef();//如果使用的是直接定义，不使用useRef的话，渲染之后it变量发生改变，clearInterval不起作用
+   useEffct(()=>{
+       it.current=setInterval(()=>{
+           count++
+       },1000)
+   },[])
+   useEffct(()=>{
+       if(count>10){
+           clearInterval(it.current)}
+   })
+    return (
+        <div>hh</div>
+    )
+}
+```
+
+获取子组件或者DOM节点的句柄
+
+渲染周期之间共享数据的存储（useState也可以，但是其数据的改变会触发重渲染，但是ref不会）
+
+`ref` 会在 `componentDidMount` 或 `componentDidUpdate` 生命周期钩子触发前更新
+
+## 使用
+
+参考官网详细操作
+
+https://zh-hans.reactjs.org/docs/refs-and-the-dom.html
