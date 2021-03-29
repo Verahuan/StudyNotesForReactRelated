@@ -25,8 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="feat(新特性+hooks): Context  ContextType  lazy  Suspense  memo hooks">
+    <list default="true" id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="feat: 3.18-3.19(git尝试)">
+      <change afterPath="$PROJECT_DIR$/Untitled 1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Untitled.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/框架学习/axios/Untitled 1.md" beforeDir="false" />
     </list>
     <list id="abf4a345-e62a-45fe-8054-dfc36ef7d034" name="Revert &quot;1.24号初次提交&quot;" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +45,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -76,6 +81,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1nVshv5UUCZ0b4F4VqGgNlJpQQE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,6 +91,7 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -109,6 +118,8 @@
       <workItem from="1613487893355" duration="387000" />
       <workItem from="1613571244783" duration="8000" />
       <workItem from="1614174676695" duration="789000" />
+      <workItem from="1615763892545" duration="3475000" />
+      <workItem from="1617019015100" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee">
       <created>1611486826598</created>
@@ -145,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614174839714</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(项目练习): 3.8-3.15号学习笔记（博客项目+lodash）">
+      <created>1615764071542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615764071542</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: 3.18-3.19(git尝试)">
+      <created>1617019137740</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617019137740</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +187,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Preview" />
+                        <option value="origin/Preview" />
                       </list>
                     </value>
                   </entry>
@@ -176,11 +201,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee" />
     <MESSAGE value="feat(redux学习+实战): 学习redux基础使用+练习+中间件+antD" />
     <MESSAGE value="feat(umi搭建项目+dva+antD): 学习umi基础使用+练习+antD" />
     <MESSAGE value="feat(新特性+hooks): Context  ContextType  lazy  Suspense  memo hooks" />
     <MESSAGE value="feat(项目练习): hooks练习和项目实战" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(项目练习): hooks练习和项目实战" />
+    <MESSAGE value="3.8-3.15学习笔记" />
+    <MESSAGE value="feat(项目练习): 3.8-3.15号学习笔记（博客项目+lodash）" />
+    <MESSAGE value="feat: 3.18-3.19(git尝试)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 3.18-3.19(git尝试)" />
   </component>
 </project>
