@@ -1,4 +1,9 @@
+## 目录
+
+[TOC]
+
 ### 数组API
+
 #### 会改变原数组
 - foreach：数组每个元素都执行一次回调函数，无返回
     - array.forEach(function(currentValue, index, arr), thisValue)

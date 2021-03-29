@@ -1,3 +1,5 @@
+[TOC]
+
 ### ES6常见新特性
 
 let/Const、箭头函数、模板字符串、解构赋值、函数参数默认值/Rest参数、扩展运算符、Map Set、Proxy、Reflect、Symbols、Promise、Iterator+For of、Generators、Class
