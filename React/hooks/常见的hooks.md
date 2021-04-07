@@ -219,7 +219,7 @@ const APP=()=>{
            clearInterval(it.current)}
    })
     return (
-        <div>hh</div>
+        <div ref={it}>hh</div>
     )
 }
 ```
