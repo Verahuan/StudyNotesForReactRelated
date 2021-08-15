@@ -25,12 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="feat: 3.18-3.19(git尝试)">
-      <change afterPath="$PROJECT_DIR$/Untitled 1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Untitled.md" afterDir="false" />
+    <list default="true" id="4bdfc12c-1c32-460a-b44c-79b6a4b110f5" name="Default Changelist" comment="feat: 清明学习笔记">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/框架学习/axios/Untitled 1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled 1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.md" beforeDir="false" />
     </list>
     <list id="abf4a345-e62a-45fe-8054-dfc36ef7d034" name="Revert &quot;1.24号初次提交&quot;" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +118,8 @@
       <workItem from="1614174676695" duration="789000" />
       <workItem from="1615763892545" duration="3475000" />
       <workItem from="1617019015100" duration="162000" />
+      <workItem from="1617086362517" duration="96000" />
+      <workItem from="1617760315244" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;1.24号初次提交&quot;&#10;&#10;This reverts commit 62fd19ee">
       <created>1611486826598</created>
@@ -170,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617019137740</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test(git): 测试git网络代理">
+      <created>1617086417433</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617086417433</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: 清明学习笔记">
+      <created>1617760402980</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617760402980</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +201,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Preview" />
+                        <option value="Preview" />
                       </list>
                     </value>
                   </entry>
@@ -209,7 +223,9 @@
     <MESSAGE value="feat(项目练习): hooks练习和项目实战" />
     <MESSAGE value="3.8-3.15学习笔记" />
     <MESSAGE value="feat(项目练习): 3.8-3.15号学习笔记（博客项目+lodash）" />
+    <MESSAGE value="test(git): 测试git网络代理" />
     <MESSAGE value="feat: 3.18-3.19(git尝试)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 3.18-3.19(git尝试)" />
+    <MESSAGE value="feat: 清明学习笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 清明学习笔记" />
   </component>
 </project>

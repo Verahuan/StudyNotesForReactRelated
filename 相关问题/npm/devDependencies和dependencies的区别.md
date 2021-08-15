@@ -42,7 +42,7 @@ npm install D的时候， 下载的模块为：
 
 总结：
 
-（生产相关依赖会一起下载）
+（生产相关依赖会一起）
 
 在发布npm包的时候，本身dependencies下的模块会作为依赖，一起被下载；devDependencies下面的模块就不会自动下载了；但对于项目而言，npm install 会自动下载devDependencies和dependencies下面的模块。
 

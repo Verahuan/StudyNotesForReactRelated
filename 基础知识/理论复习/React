@@ -159,5 +159,73 @@ pureComponet相当于重写了shouldComponetUpdate方法：
   - fiber只一个执行单元,每次执行完一个执行单元,React就会检查现在还剩多少时间,如果时间不够,就会将控制权让出去
   - ![image-20210404100414238](D:\typora\images\image-20210404100414238.png)
   - fiber是一种数据结构
-    - React目前的做法是使用链表,每个虚拟DOM节点内部表示为一个fiber
+    - React目前的做法是使用**链表**,每个虚拟DOM节点内部表示为一个fiber
+    
+      在渲染的时候，每一个jsx/虚拟DOM会变成一个fiber,然后会变成一个链表
+    
+      fiber结构：（树形链表）具有的属性：child\sibling\return(遍历的时候根据这个来)
+    
+      ![image-20210415164114481](D:\typora\images\image-20210415164114481.png)
+    
     - 从顶点开始遍历
+    
+      ```jsx
+      //fiber example
+      let rootFiber={
+      	tag:"Tag_Root",//fiber的类型
+      	key:"ROOT",//唯一标识
+      	stateRoot:root//fiber对应的真实DOM节点
+          props:{children:[A]}
+      }
+      ```
+  
+- 异步渲染和fiber之间的联系是什么？
+  每一个fiber就是异步渲染中的一个小任务
+
+- fiber的创建和执行可以中断（设置条件），如下：
+
+- ![image-20210415191959471](D:\typora\images\image-20210415191959471.png)
+
+## 10.自己实现render过程
+
+包括：**调度 、调和、 提交** 三个阶段，其中调度阶段是可以中断的
+
+三个步骤：
+
+1.定义jsx
+
+2.过程详细介绍：
+
+**开启工作循环（workLoopSync）**-
+
+**执行工作单元**：执行过程见下图
+
+后：提交阶段
+
+![image-20210415163330505](D:\typora\images\image-20210415163330505.png)
+
+3.一个fiber完成的标志（结束工作单元）：没有子元素的时候
+
+fiber在结束的时候需要创建真实的DOM元素
+
+![image-20210415192213942](D:\typora\images\image-20210415192213942.png)
+
+遍历从上往下，完成从下往上
+
+![image-20210415194239121](D:\typora\images\image-20210415194239121.png)
+
+**提交阶段**：
+
+1. 在完成工作单元的时候，要判断当前的fiber节点有没有对应的DOM操作，如果有的话，需要构建副作用链表
+2. 该链表中不是包含所有的节点，而是包含有副作用的节点（没有变化的节点不会被副作用）
+3. 单链表指针：fistEffct、nextEffct、lastEffct
+
+![image-20210415194927897](D:\typora\images\image-20210415194927897.png)
+
+返回的时候，合并该单链表：B的链表和B本身追加到A后面
+
+B追加到自己的副作用链表后面。lastEffct会指向B
+
+![image-20210415195737132](D:\typora\images\image-20210415195737132.png)
+
+![image-20210415200357850](D:\typora\images\image-20210415200357850.png)
