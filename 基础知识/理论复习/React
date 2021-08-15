@@ -1,0 +1,231 @@
+## 1. fetch、ajax、axios
+
+
+
+## 2. React事件处理--修改this指向
+
+bind绑定
+
+创建箭头函数
+
+在constructor中提前对事件进行绑定
+
+事件的调用写法改为箭头函数的形式
+
+直接函数组件？
+
+## 3. React中数值传递
+
+## 4.对React的理解?
+
+- 是什么？用户构建界面的js库
+  - 只是一个库，并不是一个框架（注意区分框架和库https://zhuanlan.zhihu.com/p/26078359）
+
+- 能干什么？利用组件化的方式构建可以快速响应的web应用程序（快速响应）
+- 怎么完成？
+  - 声名式
+    - 命令式需要一步一步完成，
+    - 声名式只需要告诉其干嘛（render），其内部帮你完成对应的操作
+  - 组件化
+    - React中以组件为单位
+  - 一次学习，随处编写：通用性
+    - 社区强大/比较简单
+    - 没有系统解决方案，选型成本高
+    - 过于灵活，要求高（更像js）
+
+## 5.为什么要引入JSX？
+
+- ### jsx是什么？
+  
+  - jsx是一个javaScript的语法拓展
+- jsx其实是React.creatElement的语法糖
+  
+- ### 原因？
+  
+  - 使用更加简洁，可以实现声名式
+  - 不引入新的概念，可以只写js（vue是用的模板）
+- 结构、样式和事件能够实现高内聚低耦合，方便重用和组合
+  
+- ### AST抽象语法树
+  
+- 用树状的形式表现编程语言的语法结构
+  
+- ### babel转义
+  
+  - 引入babel，利用babel.transform() 使用对应的插件进行转义，其中分为classic和automatic两种，转义之后分别如下，其中上面的对应的是classic模式
+
+![image-20210403092419902](D:\typora\images\image-20210403092419902.png)
+
+## 6.虚拟DOM
+
+- ### 虚拟dom是什么？（纯js对象，描述元素的样子）
+
+  ![image-20210403100408677](D:\typora\images\image-20210403100408677.png)
+  - React.createElement函数返回的就是一个虚拟DOM
+  - 以上React.creatElement方法返回的是一个普通的js对象，其可以用来描述元素的样子（以上element）
+  - 虚拟DOM是跨平台的，和平台无关
+  
+- ### 虚拟DOM的优缺点
+
+  - 优点
+    - 虚拟DOM可以处理浏览器兼容性问题，避免用户操作真实DOM
+    - 内容经过了XSS处理，可以防范XSS攻击（React可以帮你转义）
+    - 更加容易实现跨平台开发
+    - 可以diff算法更新（不需要整个DOM更新）
+  - 缺点：
+     	 - 虚拟DOM需要消耗额外的内存
+		 - 首次渲染不一定会更快
+
+## 7.函数组件和类组件的相同点和不同点？
+
+- 源码怎么区分是函数组件还是类组件？
+
+  - 在组件的原型上面添加一个isReactComponent对象，继承的时候可以继承到
+
+    ![image-20210403103228894](D:\typora\images\image-20210403103228894.png)
+
+* 相同点：
+
+  * 都可以接受属性并且返回React元素
+
+* 不同点
+  * 编程思想不同：类组件需要创建实例，基于面向对象的方式变成，而函数组件不需要创建实例，接收输入，返回输出，基于函数式的编程思想
+  
+  * 内存占用：函数组件不需要创建实例，可以节约内存
+  
+  * **捕获特性**：函数组件具有值捕获特性(函数组件中取得是渲染当时的值，而this.state取的是最新的值)
+  
+    ![image-20210403105740334](D:\typora\images\image-20210403105740334.png)
+  
+  * 可测试性：函数组件更方便写单元测试
+  
+  * 状态：类组件可以有自己的状态，但是函数组件需要使用useState
+  
+  * 生命周期：类组件有自己的生命周期，但是可以使用hooks实现类似功能
+  
+  * 逻辑复用：类组件可以利用继承，函数组件可以使用自定义hooks, 类组件复用使用HOC
+  
+  * 跳过更新：类组件可以使用shouldComponetUpdate和pureComponent
+
+![image-20210403110441690](D:\typora\images\image-20210403110441690.png)
+
+pureComponet相当于重写了shouldComponetUpdate方法：
+
+![image-20210403110818847](D:\typora\images\image-20210403110818847.png)
+
+函数组件使用memo
+
+![image-20210404083703590](D:\typora\images\image-20210404083703590.png)
+
+使用该函数组件的时候，如果传入的属性不改变，其不会刷新
+
+## 8.React中的渲染流程
+
+- 设计理念
+  - 跨平台渲染(虚拟DOM)
+  - 实现快速响应(异步可中断+增量更新)
+    - 异步可中断(利用中间的空闲时间执行js任务)
+  - 增量更新(比较DOM之后进行渲染,diff)
+  
+- 性能瓶颈
+  - js任务执行时间过长
+    - 浏览器刷新的频率为60Hz,大概16.6毫秒渲染一次,而js西安成和渲染线程是互斥的,所以如果js西安成执行时间超过16.6毫秒就会导致卡顿
+    - https://developers.google.com/web/fundamentals/performance/rendering
+    - 解决方法:React利用空闲时间进行更新,不影响渲染进行,把一个耗时任务切分成一个个小任务,分布在每一帧里面的方式叫做时间切片
+    - React为了兼容性使用了MessageChannel+requestAnimationFrame模拟了requestldleCallback的功能
+    - 做了时间切点之后,为了实现异步,部分生命周期被废弃了:componentWillMount componentWillUpdate  componentWillReciveProps(这些操作都被分散了哇)
+- 相关概念
+  - requestldleCallback使得开发者能在主事件循环上执行后台和低优先级工作,而不会影响延迟关键事件,如动画和输入响应
+
+  - 正常帧任务完成后没有超过16ms,说明时间有富余,此时会执行requestldleCallback里注册的任务
+
+    ![image-20210404094331368](D:\typora\images\image-20210404094331368.png)
+
+![image-20210404092530757](D:\typora\images\image-20210404092530757.png)
+
+![image-20210404093200690](D:\typora\images\image-20210404093200690.png)
+
+下面的方法为异步的写法,可以实现异步可中断的功能
+
+## 9.fiber
+
+- 结合第8点,可以知道,我们可以通过某些调度策略合理分配cpu资源,从而提高用户的响应速度
+
+- 通过Fiber架构,让自己的调和过程变得可以被中断,适时让出cpu执行权,可以让浏览器及时响应用户的交互
+
+### 相关概念
+
+- Fiber
+  - fiber只一个执行单元,每次执行完一个执行单元,React就会检查现在还剩多少时间,如果时间不够,就会将控制权让出去
+  - ![image-20210404100414238](D:\typora\images\image-20210404100414238.png)
+  - fiber是一种数据结构
+    - React目前的做法是使用**链表**,每个虚拟DOM节点内部表示为一个fiber
+    
+      在渲染的时候，每一个jsx/虚拟DOM会变成一个fiber,然后会变成一个链表
+    
+      fiber结构：（树形链表）具有的属性：child\sibling\return(遍历的时候根据这个来)
+    
+      ![image-20210415164114481](D:\typora\images\image-20210415164114481.png)
+    
+    - 从顶点开始遍历
+    
+      ```jsx
+      //fiber example
+      let rootFiber={
+      	tag:"Tag_Root",//fiber的类型
+      	key:"ROOT",//唯一标识
+      	stateRoot:root//fiber对应的真实DOM节点
+          props:{children:[A]}
+      }
+      ```
+  
+- 异步渲染和fiber之间的联系是什么？
+  每一个fiber就是异步渲染中的一个小任务
+
+- fiber的创建和执行可以中断（设置条件），如下：
+
+- ![image-20210415191959471](D:\typora\images\image-20210415191959471.png)
+
+## 10.自己实现render过程
+
+包括：**调度 、调和、 提交** 三个阶段，其中调度阶段是可以中断的
+
+三个步骤：
+
+1.定义jsx
+
+2.过程详细介绍：
+
+**开启工作循环（workLoopSync）**-
+
+**执行工作单元**：执行过程见下图
+
+后：提交阶段
+
+![image-20210415163330505](D:\typora\images\image-20210415163330505.png)
+
+3.一个fiber完成的标志（结束工作单元）：没有子元素的时候
+
+fiber在结束的时候需要创建真实的DOM元素
+
+![image-20210415192213942](D:\typora\images\image-20210415192213942.png)
+
+遍历从上往下，完成从下往上
+
+![image-20210415194239121](D:\typora\images\image-20210415194239121.png)
+
+**提交阶段**：
+
+1. 在完成工作单元的时候，要判断当前的fiber节点有没有对应的DOM操作，如果有的话，需要构建副作用链表
+2. 该链表中不是包含所有的节点，而是包含有副作用的节点（没有变化的节点不会被副作用）
+3. 单链表指针：fistEffct、nextEffct、lastEffct
+
+![image-20210415194927897](D:\typora\images\image-20210415194927897.png)
+
+返回的时候，合并该单链表：B的链表和B本身追加到A后面
+
+B追加到自己的副作用链表后面。lastEffct会指向B
+
+![image-20210415195737132](D:\typora\images\image-20210415195737132.png)
+
+![image-20210415200357850](D:\typora\images\image-20210415200357850.png)

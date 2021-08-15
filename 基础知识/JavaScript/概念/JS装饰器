@@ -1,0 +1,36 @@
+## 什么是装饰器
+
+在面向对象（OOP）的设计模式中，decorator被称为装饰模式。OOP的装饰模式需要通过继承和组合来实现
+
+python实例
+
+```python
+def decorator(f):
+    print "my decorator"
+    return f
+@decorator
+def myfunc():
+    print "my function"
+myfunc()
+# my decorator
+# my function
+```
+
+可以解释为：
+
+```python
+def decorator(f):
+    def wrapper():
+        print "my decorator"
+        return f()
+    return wrapper
+def myfunc():
+    print "my function"
+myfunc = decorator(myfuc)
+```
+
+装饰器解释:
+
+1. 接受一个参数，拓展功能之后返回新的接口（wrapper）
+2. 改变对原方法的访问，改变被装饰方法的入口引用
+
